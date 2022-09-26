@@ -4,12 +4,27 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Advance-Android-Project/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1405" />
+        <entry key="..\:/Advance-Android-Project/app/src/main/res/drawable/button_bg.xml" value="0.14" />
         <entry key="..\:/Advance-Android-Project/app/src/main/res/drawable/custom_button.xml" value="0.109" />
         <entry key="..\:/Advance-Android-Project/app/src/main/res/drawable/custom_search_view.xml" value="0.109" />
+        <entry key="..\:/Advance-Android-Project/app/src/main/res/drawable/edit_text_bg.xml" value="0.14" />
+        <entry key="..\:/Advance-Android-Project/app/src/main/res/drawable/ic_launcher_background.xml" value="0.14" />
+        <entry key="..\:/Advance-Android-Project/app/src/main/res/drawable/vie_bg.xml" value="0.14" />
+        <entry key="..\:/Advance-Android-Project/app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="..\:/Advance-Android-Project/app/src/main/res/layout/activity_main.xml" value="0.22447916666666667" />
         <entry key="..\:/Advance-Android-Project/app/src/main/res/layout/activity_second.xml" value="0.25" />
-        <entry key="..\:/Advance-Android-Project/app/src/main/res/layout/activity_third.xml" value="0.33" />
+        <entry key="..\:/Advance-Android-Project/app/src/main/res/layout/activity_signup.xml" value="0.22" />
+        <entry key="..\:/Advance-Android-Project/app/src/main/res/layout/activity_third.xml" value="0.25" />
         <entry key="..\:/Advance-Android-Project/app/src/main/res/layout/activity_third2.xml" value="0.2223731884057971" />
+        <entry key="..\:/Advance-Android-Project/app/src/main/res/layout/fragment_favorite.xml" value="0.25" />
+        <entry key="..\:/Advance-Android-Project/app/src/main/res/layout/fragment_favorite2.xml" value="0.10739614994934144" />
+        <entry key="..\:/Advance-Android-Project/app/src/main/res/layout/fragment_infor.xml" value="0.1933876811594203" />
+        <entry key="..\:/Advance-Android-Project/app/src/main/res/layout/fragment_profile.xml" value="0.10739614994934144" />
+        <entry key="..\:/Advance-Android-Project/app/src/main/res/layout/fragment_signup.xml" value="0.22" />
+        <entry key="..\:/Advance-Android-Project/app/src/main/res/layout/fragment_signup_tab_fragment.xml" value="0.19202898550724637" />
+        <entry key="..\:/Advance-Android-Project/app/src/main/res/layout/header.xml" value="0.1933876811594203" />
+        <entry key="..\:/Advance-Android-Project/app/src/main/res/layout/login_tab_fragment.xml" value="0.22" />
+        <entry key="..\:/Advance-Android-Project/app/src/main/res/menu/main_menu.xml" value="0.2234375" />
       </map>
     </option>
   </component>

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/tam_coc_ninh_binh"
     android:transitionName="background_image_transition"
-    tools:context=".SecondActivity"
+    tools:context=".Activity.SecondActivity"
     tools:targetApi="LOLLIPOP">
 
 

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "209038214332",
+    "firebase_url": "https://vietnam-s-scenic-spots-app-default-rtdb.firebaseio.com",
+    "project_id": "vietnam-s-scenic-spots-app",
+    "storage_bucket": "vietnam-s-scenic-spots-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:209038214332:android:ee4e8e4f7904a03c4c7cb9",
+        "android_client_info": {
+          "package_name": "com.example.advance_android_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "209038214332-gr1gub9r1rjq4i4lrplvpqrpfc8pmfoq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAL8N9RveIU4zsvFfmpmx_Zd-9PH4IYPQk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "209038214332-gr1gub9r1rjq4i4lrplvpqrpfc8pmfoq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

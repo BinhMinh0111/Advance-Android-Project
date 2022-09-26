@@ -1,4 +1,4 @@
-package com.example.advance_android_project;
+package com.example.advance_android_project.Activity;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,6 +15,8 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
+
+import com.example.advance_android_project.R;
 
 public class SecondActivity extends AppCompatActivity {
 

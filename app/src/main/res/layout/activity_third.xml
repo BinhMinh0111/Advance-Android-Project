@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:scrollbars="none"
-    tools:context=".ThirdActivity">
+    tools:context=".Activity.ThirdActivity">
 
 
     <ImageView
@@ -31,11 +31,78 @@
         app:layout_constraintTop_toTopOf="@id/header_background"
         app:srcCompat="@drawable/ic_down_arrow" />
 
+    <ImageView
+        android:id="@+id/second_ic_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/second_ic_favor"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeShareDrawable" />
+
+    <ImageView
+        android:id="@+id/second_ic_favor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_favorite_24" />
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/third_scrollview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/third_title"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Ninh Bình"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/third_rating_number2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:fontFamily="@font/roboto"
+            android:text="4.75"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar2"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="-20dp"
+            android:max="1"
+            android:numStars="1"
+            android:progressTint="@color/colorAccent"
+            android:rating="1"
+            tools:targetApi="lollipop" />
+
+    </LinearLayout>
 
     <ScrollView
         android:id="@+id/third_scrollview"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="320dp"
         android:background="#FFFFFF"
         android:scrollbars="none"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -50,60 +117,134 @@
             android:layout_marginEnd="18dp"
             android:orientation="vertical">
 
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="16dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/third_title"
-                    android:layout_width="320dp"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto_medium"
-                    android:text="Ninh Bình"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="24sp" />
-
-                <TextView
-                    android:id="@+id/third_rating_number2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginTop="-4dp"
-                    android:fontFamily="@font/roboto"
-                    android:text="4.75"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="12sp" />
-
-                <RatingBar
-                    android:id="@+id/ratingBar2"
-                    style="?android:attr/ratingBarStyleSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="9dp"
-                    android:layout_marginEnd="-20dp"
-                    android:max="1"
-                    android:numStars="1"
-                    android:progressTint="@color/colorAccent"
-                    android:rating="1"
-                    tools:targetApi="lollipop" />
-
-            </LinearLayout>
-
             <TextView
                 android:id="@+id/third_photogelerry"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="12dp"
                 android:fontFamily="@font/roboto_bold"
                 android:text="Thư mục ảnh"
-                android:textColor="#111111" />
+                android:textColor="#111111"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/third_img1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="16dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/tam_coc_ninh_binh" />
+
+                <ImageView
+                    android:id="@+id/third_img2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/tam_coc_ninh_binh" />
+
+                <ImageView
+                    android:id="@+id/third_img3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/tam_coc_ninh_binh" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/third_thongtin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Thông tin"
+                android:textColor="#111111"
+                android:textSize="16sp"></TextView>
+
+            <TextView
+                android:id="@+id/third_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto"
+                android:text="vabvfkbvkabskjbfjknfjkgenargn SDVuganurgnjuWNEGUNOEWUG SNGAUIEFNUIE
+NJKFANKJGNAJRGNAR AKNAJKFKABKERGB ABGKJABGKABRH ABGHABRGHBG JKGBGBHQB BHBRGQBGH KJABWHBG JKABWEHB BBGEHJGB "
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/third_danhgia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Đánh giá"
+                    android:textColor="#111111"
+                    android:textSize="16sp"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/third_details3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto"
+                            android:text="vabvfkbvkabskjbfjknfjkgenargn SDVuganurgnjuWNEGUNOEWUG SNGAUIEFNUIE
+NJKFANKJGNAJRGNAR AKNAJKFKABKERGB ABGKJABGKABRH ABGHABRGHBG JKGBGBHQB BHBRGQBGH KJABWHBG JKABWEHB BBGEHJGB "
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12sp" />
+                        <TextView
+                            android:id="@+id/third_details4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto"
+                            android:text="vabvfkbvkabskjbfjknfjkgenargn SDVuganurgnjuWNEGUNOEWUG SNGAUIEFNUIE
+NJKFANKJGNAJRGNAR AKNAJKFKABKERGB ABGKJABGKABRH ABGHABRGHBG JKGBGBHQB BHBRGQBGH KJABWHBG JKABWEHB BBGEHJGB "
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
 
         </LinearLayout>
+
+
     </ScrollView>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
