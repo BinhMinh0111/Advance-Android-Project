@@ -3,21 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/mainActivity">
-
-    <activity
-        android:id="@+id/mainActivity"
-        android:name="com.example.advance_android_project.Activity.MainActivity"
-        android:label="activity_main"
-        tools:layout="@layout/activity_main" />
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.advance_android_project.Fragment.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
     <fragment
         android:id="@+id/favoriteFragment"
-        android:name="com.example.advance_android_project.FavoriteFragment"
+        android:name="com.example.advance_android_project.Fragment.FavoriteFragment"
         android:label="fragment_favorite"
         tools:layout="@layout/fragment_favorite" />
     <fragment
-        android:id="@+id/inforFragment"
-        android:name="com.example.advance_android_project.InforFragment"
-        android:label="fragment_infor"
-        tools:layout="@layout/fragment_infor" />
+        android:id="@+id/profileFragment"
+        android:name="com.example.advance_android_project.Fragment.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/mainActivity"
+        android:name="com.example.advance_android_project.Fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
 </navigation>

@@ -27,6 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
         android:layout_marginTop="50dp"
+        android:background="#34FFFFFF"
         app:layout_constraintStart_toStartOf="@id/header_background"
         app:layout_constraintTop_toTopOf="@id/header_background"
         app:srcCompat="@drawable/ic_down_arrow" />
@@ -104,6 +105,7 @@
         android:layout_width="match_parent"
         android:layout_height="320dp"
         android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
         android:scrollbars="none"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -117,58 +119,75 @@
             android:layout_marginEnd="18dp"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/third_photogelerry"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:fontFamily="@font/roboto_bold"
-                android:text="Thư mục ảnh"
-                android:textColor="#111111"
-                android:textSize="16sp" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
                 android:orientation="horizontal">
 
-                <ImageView
-                    android:id="@+id/third_img1"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="16dp"
-                    android:scaleType="fitXY"
-                    app:srcCompat="@drawable/tam_coc_ninh_binh" />
 
-                <ImageView
-                    android:id="@+id/third_img2"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="16dp"
-                    android:scaleType="fitXY"
-                    app:srcCompat="@drawable/tam_coc_ninh_binh" />
+                <androidx.cardview.widget.CardView
+                    android:layout_margin='10dp'
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="0dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    tools:ignore="MissingClass">
 
-                <ImageView
-                    android:id="@+id/third_img3"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="16dp"
-                    android:scaleType="fitXY"
-                    app:srcCompat="@drawable/tam_coc_ninh_binh" />
+                    <ImageView
+                        android:id="@+id/third_img1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/tam_coc_ninh_binh" />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_margin='10dp'
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="0dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    tools:ignore="MissingClass">
+
+                    <ImageView
+                        android:id="@+id/third_img2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/tam_coc_ninh_binh" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_margin='10dp'
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="0dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    tools:ignore="MissingClass">
+
+                    <ImageView
+                        android:id="@+id/third_img3"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/tam_coc_ninh_binh" />
+                </androidx.cardview.widget.CardView>
             </LinearLayout>
 
             <TextView
                 android:id="@+id/third_thongtin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="16dp"
                 android:fontFamily="@font/roboto_bold"
                 android:text="Thông tin"
-                android:textColor="#111111"
+                android:textColor="@color/blackmedium"
                 android:textSize="16sp"></TextView>
 
             <TextView
@@ -178,10 +197,11 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="6dp"
                 android:layout_weight="1"
+                android:elegantTextHeight="true"
                 android:fontFamily="@font/roboto"
                 android:text="vabvfkbvkabskjbfjknfjkgenargn SDVuganurgnjuWNEGUNOEWUG SNGAUIEFNUIE
 NJKFANKJGNAJRGNAR AKNAJKFKABKERGB ABGKJABGKABRH ABGHABRGHBG JKGBGBHQB BHBRGQBGH KJABWHBG JKABWEHB BBGEHJGB "
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/blackmin"
                 android:textSize="12sp" />
 
             <LinearLayout
@@ -197,7 +217,7 @@ NJKFANKJGNAJRGNAR AKNAJKFKABKERGB ABGKJABGKABRH ABGHABRGHBG JKGBGBHQB BHBRGQBGH 
 
                     android:fontFamily="@font/roboto_bold"
                     android:text="Đánh giá"
-                    android:textColor="#111111"
+                    android:textColor="@color/blackmedium"
                     android:textSize="16sp"></TextView>
 
                 <LinearLayout
@@ -220,8 +240,9 @@ NJKFANKJGNAJRGNAR AKNAJKFKABKERGB ABGKJABGKABRH ABGHABRGHBG JKGBGBHQB BHBRGQBGH 
                             android:fontFamily="@font/roboto"
                             android:text="vabvfkbvkabskjbfjknfjkgenargn SDVuganurgnjuWNEGUNOEWUG SNGAUIEFNUIE
 NJKFANKJGNAJRGNAR AKNAJKFKABKERGB ABGKJABGKABRH ABGHABRGHBG JKGBGBHQB BHBRGQBGH KJABWHBG JKABWEHB BBGEHJGB "
-                            android:textColor="@color/colorPrimary"
+                            android:textColor="@color/blackmin"
                             android:textSize="12sp" />
+
                         <TextView
                             android:id="@+id/third_details4"
                             android:layout_width="match_parent"
